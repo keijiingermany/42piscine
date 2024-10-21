@@ -6,13 +6,14 @@
 /*   By: kuehara <kuehara@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 13:19:52 by kuehara           #+#    #+#             */
-/*   Updated: 2024/10/18 14:13:47 by kuehara          ###   ########.fr       */
+/*   Updated: 2024/10/21 12:09:52 by kuehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
-void ft_lstdelone(t_list *lst, void (*del)(void *))
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	if (lst && del)
 	{

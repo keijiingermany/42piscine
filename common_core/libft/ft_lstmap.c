@@ -6,14 +6,17 @@
 /*   By: kuehara <kuehara@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 13:20:04 by kuehara           #+#    #+#             */
-/*   Updated: 2024/10/18 14:13:50 by kuehara          ###   ########.fr       */
+/*   Updated: 2024/10/21 12:10:07 by kuehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-t_list  *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+#include "libft.h"
+#include <stdlib.h>
+
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *new_lst;
-	t_list *new_node;
+	t_list	*new_lst;
+	t_list	*new_node;
 
 	new_lst = NULL;
 	while (lst)

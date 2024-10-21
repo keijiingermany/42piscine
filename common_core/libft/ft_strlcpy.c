@@ -6,7 +6,7 @@
 /*   By: kuehara <kuehara@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 14:15:31 by kuehara           #+#    #+#             */
-/*   Updated: 2024/10/18 18:39:27 by kuehara          ###   ########.fr       */
+/*   Updated: 2024/10/21 11:18:17 by kuehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,6 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 	if (dstsize == 0)
 		return (ft_strlen(src));
-
 	i = 0;
 	while (i + 1 < dstsize && src[i])
 	{
@@ -27,6 +26,5 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	if (dstsize > 0)
 		dst[i] = '\0';
-
 	return (ft_strlen(src));
 }

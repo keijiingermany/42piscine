@@ -6,7 +6,18 @@
 /*   By: kuehara <kuehara@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 13:22:30 by kuehara           #+#    #+#             */
-/*   Updated: 2024/10/18 14:02:43 by kuehara          ###   ########.fr       */
+/*   Updated: 2024/10/21 12:06:34 by kuehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+#include <unistd.h>
+
+void	ft_putendl_fd(char *s, int fd)
+{
+	if (s)
+	{
+		ft_putstr_fd(s, fd);
+		write(fd, "\n", 1);
+	}
+}

@@ -6,11 +6,13 @@
 /*   By: kuehara <kuehara@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 13:19:56 by kuehara           #+#    #+#             */
-/*   Updated: 2024/10/18 14:13:48 by kuehara          ###   ########.fr       */
+/*   Updated: 2024/10/21 12:10:30 by kuehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+#include "libft.h"
+
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	while (lst)
 	{

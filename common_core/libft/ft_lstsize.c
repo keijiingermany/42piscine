@@ -6,14 +6,17 @@
 /*   By: kuehara <kuehara@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 13:20:12 by kuehara           #+#    #+#             */
-/*   Updated: 2024/10/18 14:13:53 by kuehara          ###   ########.fr       */
+/*   Updated: 2024/10/21 12:09:09 by kuehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_lstsize(t_list *lst)
+#include "libft.h"
+
+int	ft_lstsize(t_list *lst)
 {
-	int count = 0;
-	
+	int	count;
+
+	count = 0;
 	while (lst)
 	{
 		count++;

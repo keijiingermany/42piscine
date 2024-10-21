@@ -6,7 +6,15 @@
 /*   By: kuehara <kuehara@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 13:22:38 by kuehara           #+#    #+#             */
-/*   Updated: 2024/10/18 14:17:39 by kuehara          ###   ########.fr       */
+/*   Updated: 2024/10/21 11:33:03 by kuehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+#include <unistd.h>
+
+void	ft_putstr_fd(char *s, int fd)
+{
+	if (s)
+		write(fd, s, ft_strlen(s));
+}

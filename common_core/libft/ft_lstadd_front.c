@@ -6,9 +6,11 @@
 /*   By: kuehara <kuehara@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 13:19:43 by kuehara           #+#    #+#             */
-/*   Updated: 2024/10/18 18:16:18 by kuehara          ###   ########.fr       */
+/*   Updated: 2024/10/21 12:10:36 by kuehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

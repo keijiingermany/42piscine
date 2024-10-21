@@ -6,7 +6,14 @@
 /*   By: kuehara <kuehara@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 13:22:25 by kuehara           #+#    #+#             */
-/*   Updated: 2024/10/18 14:02:43 by kuehara          ###   ########.fr       */
+/*   Updated: 2024/10/21 12:06:10 by kuehara          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+#include <unistd.h>
+
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
